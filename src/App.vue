@@ -1,47 +1,91 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <header class="flex flex-row justify-between items-center">
+    <div>
+      <img src="/public/img/logo_tf.png" alt="logo Théa Fort" class="max-w-16">
+    </div>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+    <!--Menu Burger Mobile-->
+
+    <div class="md:hidden">
+      <button @click="toggleMenu" value="hamburger-menu">
+        <Menu color="#800101"/>
+      </button>
+      <transition name="menu">
+        <div v-if="isMenuOpen" class="fixed inset-0 bg-white z-40 pt-8 px-6">
+          <nav class="flex flex-col items-end justify-evenly h-1/2 text-2xl">
+            <X @click="closeMenu" color="white" class="bg-red rounded-full"/>
+            <router-link @click="closeMenu" to="/">
+              <House/>
+            </router-link>
+            <router-link to="/realisations">Réalisations</router-link>
+            <router-link to="/experiences">Expériences</router-link>
+            <router-link to="/competences">Compétences</router-link>
+            <router-link to="/contact">Contact</router-link>
+            <router-link to="/cv">CV</router-link>
+          </nav>
+        </div>
+      </transition>
+    </div>
+
+
+    <!-- Menu desktop-->
+    <div class="hidden md:flex">
+      <nav>
+        <router-link to="/">
+          <House/>
+        </router-link>
+        <router-link to="/realisations">Réalisations</router-link>
+        <router-link to="/experiences">Expériences</router-link>
+        <router-link to="/competences">Compétences</router-link>
+        <router-link to="/contact">Contact</router-link>
+        <router-link to="/cv">CV</router-link>
+      </nav>
     </div>
   </header>
 
-  <main>
-    <TheWelcome />
-  </main>
+  <router-view/>
+
 </template>
-
 <style scoped>
-header {
-  line-height: 1.5;
+.menu-enter-active,
+.menu-leave-active {
+  transition: all 0.2s ease-in-out;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.menu-enter-from,
+.menu-leave-to {
+  opacity: 0;
+  transform: translateX(20px);
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+.menu-enter-to,
+.menu-leave-from {
+  opacity: 1;
+  transform: translateX(0);
 }
+
+
+
 </style>
+
+<script setup>
+import {House, Menu, X} from 'lucide-vue-next';
+import {ref, watch} from 'vue';
+import {useRoute} from "vue-router";
+
+const route = useRoute();
+const isMenuOpen = ref(false);
+
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value;
+};
+
+function closeMenu() {
+  isMenuOpen.value = false;
+}
+
+watch(() => route.path, () => {
+  closeMenu();
+});
+</script>
+
