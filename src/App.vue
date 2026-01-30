@@ -1,5 +1,5 @@
 <template>
-  <header class="flex flex-row justify-between items-center">
+  <header class="flex flex-row justify-between items-center pb-8 px-8">
     <div>
       <img src="/public/img/logo_tf.png" alt="logo Théa Fort" class="max-w-16">
     </div>
@@ -11,7 +11,7 @@
         <Menu color="#800101"/>
       </button>
       <transition name="menu">
-        <div v-if="isMenuOpen" class="fixed inset-0 bg-white z-40 pt-8 px-6">
+        <div v-if="isMenuOpen" class="fixed inset-0 bg-white text-red z-40 pt-8 px-6">
           <nav class="flex flex-col items-end justify-evenly h-1/2 text-2xl">
             <X @click="closeMenu" color="white" class="bg-red rounded-full"/>
             <router-link @click="closeMenu" to="/">
