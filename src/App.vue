@@ -45,6 +45,29 @@
 
   <router-view/>
 
+
+  <footer class="bg-red mt-8 py-8 ">
+    <div class="mx-4 flex justify-between items-center">
+      <img src="/public/img/logo_tf.png" alt="logo Théa Fort" class="max-w-16">
+
+      <div>
+        <div class="flex flex-col text-right text-white text-xs">
+          <router-link to="/realisations">Réalisations</router-link>
+          <a target="_blank" href="#">Voir mon CV complet</a>
+          <router-link to="/contact">Contact</router-link>
+        </div>
+        <div class="flex justify-end mt-4">
+          <a target="_blank" href="https://www.linkedin.com/in/thea-fort">
+            <Linkedin color="white" size=16 />
+          </a>
+          <a target="_blank" href="https://github.com/Th3a-Ft">
+            <Github color="white" size=16 />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </template>
 <style scoped>
 .menu-enter-active,
@@ -65,11 +88,10 @@
 }
 
 
-
 </style>
 
 <script setup>
-import {House, Menu, X} from 'lucide-vue-next';
+import {House, Menu, X, Linkedin, Github} from 'lucide-vue-next';
 import {ref, watch} from 'vue';
 import {useRoute} from "vue-router";
 
