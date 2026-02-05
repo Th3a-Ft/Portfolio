@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white rounded-sm mx-4 p-2">
-    <h3 class="text-left">{{ title }}</h3>
+    <h3 class="text-red text-left">{{ title }}</h3>
     <ul class="list-disc list-inside">
       <li v-for="description in descriptions">{{ description }}</li>
     </ul>

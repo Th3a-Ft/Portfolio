@@ -46,22 +46,22 @@
   <router-view/>
 
 
-  <footer class="bg-red mt-8 py-8 ">
+  <footer class=" py-8 ">
     <div class="mx-4 flex justify-between items-center">
       <img src="/public/img/logo_tf.png" alt="logo Théa Fort" class="max-w-16">
 
       <div>
-        <div class="flex flex-col text-right text-white text-xs">
+        <div class="flex flex-col text-right text-red text-xs">
           <router-link to="/realisations">Réalisations</router-link>
           <a target="_blank" href="#">Voir mon CV complet</a>
           <router-link to="/contact">Contact</router-link>
         </div>
         <div class="flex justify-end mt-4">
           <a target="_blank" href="https://www.linkedin.com/in/thea-fort">
-            <Linkedin color="white" size=16 />
+            <Linkedin color="#800101" size=16 />
           </a>
           <a target="_blank" href="https://github.com/Th3a-Ft">
-            <Github color="white" size=16 />
+            <Github color="#800101" size=16 />
           </a>
         </div>
       </div>

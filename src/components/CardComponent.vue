@@ -1,7 +1,7 @@
 <template>
   <div class="border border-red mb-8 w-3/4 p-2">
     <img :src="url_img" :alt="alt_img">
-    <h3>{{ title }}</h3>
+    <h3 class="text-red">{{ title }}</h3>
     <p>{{ description }}</p>
     <hr class="w-1/2 border-red mt-3">
     <div class="flex flex-row flex-wrap justify-start">
@@ -39,12 +39,10 @@ const props = defineProps({
       url_img: {
         type: String,
         required: false,
-        default: "/public/img/img_placeholder.png",
       },
       alt_img: {
         type: String,
         required: false,
-        default: "Image placeholder vide"
       },
       skills: {
         type: Array,

@@ -1,12 +1,11 @@
 <template>
   <div class="bg-red py-8 flex flex-col items-center justify-evenly">
     <h1>{{ title }}</h1>
-    <p class="text-white text-center">{{description}} </p>
+    <p class="text-white text-center mx-3">{{description}} </p>
     <div class="w-full text-center flex justify-evenly pt-8">
-      <a v-for="link in links"
-          :href="link.url_img"
-          :alt="link.alt"
-          class="bg-white text-red font-extrabold p-2 rounded-sm">{{link.text}}</a>
+      <router-link v-for="link in links"
+          :to="link.url"
+          class="bg-white text-red font-extrabold p-2 rounded-sm">{{link.text}}</router-link>
 
     </div>
   </div>
