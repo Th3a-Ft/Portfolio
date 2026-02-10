@@ -1,7 +1,7 @@
 import {createRouter, createWebHistory} from 'vue-router'
 import HomeView from "@/views/HomeView.vue";
-import TestView from "@/views/TestView.vue";
 import AboutMeView from "@/views/AboutMeView.vue";
+import ProjectsView from "@/views/ProjectsView.vue";
 
 
 const router = createRouter({
@@ -21,12 +21,22 @@ const router = createRouter({
             name: 'aboutme',
             component: AboutMeView,
             meta: {
-                title: 'Bienvenue sur le portfolio de Théa Fort !',
-                description: 'Projets, expériences, compétences toutes les infos sur mon parcours !'
+                title: 'A propos de moi',
+                description: 'Découvrez en plus sur moi.'
+            }
+        },
+        {
+            path: '/realisations',
+            name: 'realisations',
+            component: ProjectsView,
+            meta: {
+                title: 'Tous mes projets',
+                description: 'Découvrez l\'ensemble de mes projets !'
             }
         },
 
     ],
+
 });
 
 // Loads the title and description of each page before changing the route
