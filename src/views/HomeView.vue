@@ -3,7 +3,7 @@
       title="Hello World!"
       description="Bienvenu sur mon site portfolio ! Vous trouverez les projets auxquels j’ai participé, ceux que j’ai réalisés mais aussi des infos sur mon parcours. Belle découverte !"
       :links="[
-        {'url':'https://www.youtube.com/watch?v=dQw4w9WgXcQ','text':'Réalisations'},
+        {'url':'/#experiences','text':'Expériences'},
         {'url':'/a-propos-de-moi','text':'A propos de moi'},
       ]"
   />
@@ -41,7 +41,7 @@
     </div>
   </div>
 
-  <div class="bg-red pb-8">
+  <div class="bg-red pb-8" id="competences">
     <h2 class="h2-white">Hard Skills</h2>
 
     <div class="flex flex-row flex-wrap justify-evenly">
@@ -69,7 +69,7 @@
 
   </div>
 
-  <div class="mb-4">
+  <div class="mb-4" id="experiences">
     <h2 class="h2-red">Expériences</h2>
     <Carousel :items-to-show="1" :wrap-around="true" :transition="500">
 
@@ -95,6 +95,12 @@
         <Pagination/>
       </template>
     </Carousel>
+    <div class="text-center my-8">
+      <a href="/public/doc/CV_thea_fort.pdf" target="_blank" class="mx-auto bg-red text-white font-extrabold p-2 rounded-sm">
+        Consulter mon CV complet
+      </a>
+
+    </div>
   </div>
 
   <div class="bg-red pb-8">

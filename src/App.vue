@@ -1,7 +1,9 @@
 <template>
   <header class="flex flex-row justify-between items-center pb-8 px-8">
     <div>
+      <router-link to="/">
       <img src="/public/img/logo_tf.png" alt="logo Théa Fort" class="max-w-16">
+      </router-link>
     </div>
 
     <!--Menu Burger Mobile-->
@@ -18,10 +20,13 @@
               <House/>
             </router-link>
             <router-link to="/realisations">Réalisations</router-link>
-            <router-link to="/experiences">Expériences</router-link>
-            <router-link to="/competences">Compétences</router-link>
+            <a href="/#experiences" @click="closeMenu">Expériences</a>
+            <a href="/#competences" @click="closeMenu">Compétences</a>
+            <router-link to="/a-propos-de-moi">A propos de moi</router-link>
             <router-link to="/contact">Contact</router-link>
-            <router-link to="/cv">CV</router-link>
+            <a href="/public/doc/CV_thea_fort.pdf" target="_blank">
+              Mon CV
+            </a>
           </nav>
         </div>
       </transition>
@@ -48,8 +53,9 @@
 
   <footer class=" py-8 ">
     <div class="mx-4 flex justify-between items-center">
-      <img src="/public/img/logo_tf.png" alt="logo Théa Fort" class="max-w-16">
-
+      <router-link to="/">
+        <img src="/public/img/logo_tf.png" alt="logo Théa Fort" class="max-w-16">
+      </router-link>
       <div>
         <div class="flex flex-col text-right text-red text-xs">
           <router-link to="/realisations">Réalisations</router-link>
