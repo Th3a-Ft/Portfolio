@@ -13,7 +13,7 @@ const router = createRouter({
             name: 'home',
             component: HomeView,
             meta: {
-                title: 'Bienvenue sur le portfolio de Théa Fort !',
+                title: 'Portfolio de Théa Fort !',
                 description: 'Projets, expériences, compétences toutes les infos sur mon parcours !'
             }
         },
@@ -23,7 +23,6 @@ const router = createRouter({
             component: AboutMeView,
             meta: {
                 title: 'A propos de moi',
-                description: 'Découvrez en plus sur moi.'
             }
         },
         {
@@ -32,7 +31,6 @@ const router = createRouter({
             component: ProjectsView,
             meta: {
                 title: 'Tous mes projets',
-                description: 'Découvrez l\'ensemble de mes projets !'
             }
         },
         {
@@ -41,7 +39,6 @@ const router = createRouter({
             component: ContactsView,
             meta: {
                 title: 'Contactez-moi',
-                description: 'Contactez-moi, je suis à l\'écoute !'
             }
         },
 
@@ -50,17 +47,11 @@ const router = createRouter({
 });
 
 // Loads the title and description of each page before changing the route
-/*router.beforeEach((to) => {
+router.beforeEach((to) => {
         const {title, description} = to.meta;
-        const defaultTitle = 'Book Tracker';
-        const defaultDescription = 'Bibliothèque Book Tracker';
-
+        const defaultTitle = 'Théa Fort Portfolio';
         document.title = title || defaultTitle
-
-        const descriptionElement = document.querySelector('head meta[name="description"]')
-
-        descriptionElement.setAttribute('content', description || defaultDescription)
     }
-);*/
+);
 
 export default router
