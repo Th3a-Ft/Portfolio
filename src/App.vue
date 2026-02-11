@@ -24,7 +24,7 @@
             <router-link to="/#competences" @click="closeMenu">Compétences</router-link>
             <router-link to="/a-propos-de-moi">A propos de moi</router-link>
             <router-link to="/contact">Contact</router-link>
-            <a href="/public/doc/CV_thea_fort.pdf" target="_blank">
+            <a :href="`${publicPath}doc/CV_thea_fort.pdf`" target="_blank">
               Mon CV
             </a>
           </nav>
@@ -44,7 +44,7 @@
         <router-link :to="{ path: '/', hash: '#skills' }" class="mx-3">Compétences</router-link>
         <router-link to="/a-propos-de-moi" class="mx-3">A propos de moi</router-link>
         <router-link to="/contact" class="mx-3">Contact</router-link>
-        <a href="/public/doc/CV_thea_fort.pdf" target="_blank" class="mx-3">
+        <a :href="`${publicPath}doc/CV_thea_fort.pdf`" target="_blank" class="mx-3">
           Mon CV
         </a>
       </nav>
@@ -63,7 +63,7 @@
       <div>
         <div class="flex flex-col text-right text-red text-xs md:text-sm">
           <router-link to="/realisations">Réalisations</router-link>
-          <a target="_blank" href="/public/doc/CV_thea_fort.pdf">Mon CV complet</a>
+          <a target="_blank" :href="`${publicPath}doc/CV_thea_fort.pdf`">Mon CV complet</a>
           <router-link to="/contact">Contacts</router-link>
         </div>
         <div class="flex justify-end mt-4">
@@ -104,7 +104,7 @@
 import {House, Menu, X, Linkedin, Github} from 'lucide-vue-next';
 import {ref, watch} from 'vue';
 import {useRoute} from "vue-router";
-
+const publicPath = import.meta.env.BASE_URL;
 const route = useRoute();
 const isMenuOpen = ref(false);
 

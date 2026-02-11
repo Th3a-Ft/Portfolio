@@ -124,7 +124,7 @@
     </div>
 
     <div class="text-center my-8">
-      <a href="/public/doc/CV_thea_fort.pdf" target="_blank" class="mx-auto bg-red text-white font-extrabold p-2 rounded-sm">
+      <a :href="`${publicPath}doc/CV_thea_fort.pdf`" target="_blank" class="mx-auto bg-red text-white font-extrabold p-2 rounded-sm">
         Consulter mon CV complet
       </a>
 
@@ -193,7 +193,10 @@ import {CalendarDays, GraduationCap, Link, MapPin} from "lucide-vue-next";
 
 import { ref, onMounted, onUnmounted } from 'vue'
 
+const publicPath = import.meta.env.BASE_URL;
+
 const isMobile = ref(true)
+
 const checkScreen = () => {
   isMobile.value = window.innerWidth < 768
 }

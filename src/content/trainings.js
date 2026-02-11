@@ -11,7 +11,7 @@ export const trainings_texts = {
             location: "Grenoble (38)",
             date: "Depuis mars 2025",
             descriptions: ['Maitriser des langages de programmation', 'Concevoir et gérer des bases de données', 'Appliquer les bonnes pratiques de développement', 'Traduire techniquement un cahiers des charges'],
-            link:"/public/doc/programme-cda.pdf",
+            link:"https://le-campus-numerique.fr/formations-developpeur2/",
         },
         {
             title: "Master Information Communication Publique et Médias",
