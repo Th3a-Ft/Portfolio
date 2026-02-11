@@ -20,8 +20,8 @@
               <House/>
             </router-link>
             <router-link to="/realisations">Réalisations</router-link>
-            <a href="/#experiences" @click="closeMenu">Expériences</a>
-            <a href="/#competences" @click="closeMenu">Compétences</a>
+            <router-link to="/#experiences" @click="closeMenu">Expériences</router-link>
+            <router-link to="/#competences" @click="closeMenu">Compétences</router-link>
             <router-link to="/a-propos-de-moi">A propos de moi</router-link>
             <router-link to="/contact">Contact</router-link>
             <a href="/public/doc/CV_thea_fort.pdf" target="_blank">
@@ -40,8 +40,8 @@
           <House/>
         </router-link>
         <router-link to="/realisations" class="mx-3">Réalisations</router-link>
-        <a href="/#experiences" class="mx-3">Expériences</a>
-        <a href="/#competences" class="mx-3">Compétences</a>
+        <router-link to="/#experiences" class="mx-3">Expériences</router-link>
+        <router-link to="/#competences" class="mx-3">Compétences</router-link>
         <router-link to="/a-propos-de-moi" class="mx-3">A propos de moi</router-link>
         <router-link to="/contact" class="mx-3">Contact</router-link>
         <a href="/public/doc/CV_thea_fort.pdf" target="_blank" class="mx-3">
