@@ -51,7 +51,7 @@
   <router-view/>
 
 
-  <footer class=" py-8 ">
+  <footer class="py-8 border-t border-red">
     <div class="mx-4 flex justify-between items-center">
       <router-link to="/">
         <img src="/public/img/logo_tf.png" alt="logo Théa Fort" class="max-w-16">
@@ -59,7 +59,7 @@
       <div>
         <div class="flex flex-col text-right text-red text-xs">
           <router-link to="/realisations">Réalisations</router-link>
-          <a target="_blank" href="#">Voir mon CV complet</a>
+          <a target="_blank" href="/public/doc/CV_thea_fort.pdf">Mon CV complet</a>
           <router-link to="/contact">Contact</router-link>
         </div>
         <div class="flex justify-end mt-4">

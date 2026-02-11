@@ -45,7 +45,7 @@ export const projects_texts = {
             category:"graph"
         },
         {
-            url_img:"/public/img/img_projects/guc_affiches.png",
+            url_img:"img/img_projects/guc_affiches.png",
             alt_img:"Affiches de course de GUC Grenoble ski",
             title: "Affiches de course",
             description: "Affiches réalisées pour la promotion des courses organisées par le club du GUC Grenoble ski.",
@@ -64,7 +64,7 @@ export const projects_texts = {
             category:"comm"
         },
         {
-            url_img: "public/img/img_projects/esmt_bache.jpg",
+            url_img: "img/img_projects/esmt_bache.jpg",
             alt_img: "Bâche \"Du plaisir Meylan\"",
             title: "Du plaisir Meylan !",
             description: "Création d'une bâche aux couleurs du club.",
@@ -75,7 +75,7 @@ export const projects_texts = {
 
         },
         {
-            url_img: "public/img/img_projects/guc_bache.png",
+            url_img: "img/img_projects/guc_bache.png",
             alt_img: "Bâche aux couleurs du GUC Grenoble Ski",
             title: "Bâche et oriflamme",
             description: "Supports de communication pour les événements du club de ski.",
@@ -87,7 +87,7 @@ export const projects_texts = {
         },
         {
 
-            url_img: "public/img/img_projects/pvv_affiche.png",
+            url_img: "img/img_projects/pvv_affiche.png",
             alt_img: "Affiches des événements et matchs du Pays Voironnais Volley",
             title: "Jour de match et événements",
             description: "Elaboration des affiches pour les matchs à domicile et les événements du club.",
@@ -125,7 +125,7 @@ export const projects_texts = {
             category:"comm"
         },
         {
-            url_img: "public/img/img_projects/uc_logo.png",
+            url_img: "img/img_projects/uc_logo.png",
             alt_img:"Logo de l'association de l'Union Cressolanne",
             title: "Création de logo",
             description: "Création d'un logo représentant l'association",

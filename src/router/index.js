@@ -2,6 +2,7 @@ import {createRouter, createWebHistory} from 'vue-router'
 import HomeView from "@/views/HomeView.vue";
 import AboutMeView from "@/views/AboutMeView.vue";
 import ProjectsView from "@/views/ProjectsView.vue";
+import ContactsView from "@/views/ContactsView.vue";
 
 
 const router = createRouter({
@@ -32,6 +33,15 @@ const router = createRouter({
             meta: {
                 title: 'Tous mes projets',
                 description: 'Découvrez l\'ensemble de mes projets !'
+            }
+        },
+        {
+            path: '/contact',
+            name: 'contact',
+            component: ContactsView,
+            meta: {
+                title: 'Contactez-moi',
+                description: 'Contactez-moi, je suis à l\'écoute !'
             }
         },
 
