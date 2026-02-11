@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 #app {
-  max-width: 1280px;
+  /*max-width: 1280px;*/
   margin: 0 auto;
   padding-top: 2rem;
   /*font-weight: normal;*/
@@ -47,13 +47,11 @@ h3{
 }
 
 .btn-filter :active{
-    /*bg-white text-red font-extrabold p-2 mb-2 rounded-sm*/
     background: var(--tf-c-red-soft);
     color: black;
 }
 
 .btn-filter {
-    /*bg-white text-red font-extrabold p-2 mb-2 rounded-sm*/
     background: var(--tf-c-red);
     color: white;
     padding: 0.5rem;
@@ -61,12 +59,9 @@ h3{
     border-radius: var(--radius-sm);}
 
 
-
-
-
 @media (hover: hover) {
   a:hover {
-    background-color: var(--tf-c-red-soft);
+      text-decoration-line: underline;
   }
 }
 

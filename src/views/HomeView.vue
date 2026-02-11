@@ -9,9 +9,9 @@
   />
   <div>
     <h2 class="h2-red">Réalisations</h2>
-    <Carousel :items-to-show="1" :wrap-around="true" :transition="500" class="pt-1">
+    <Carousel :items-to-show="1" :wrap-around="true" :transition="500" class="pt-1" v-if="isMobile">
 
-      <Slide v-for="project in projects_texts.projects.slice(0,3)" :key="project">
+      <Slide v-for="project in projects_texts.projects.slice(0,3)" :key="project.title">
         <div class="carousel__item">
           <CardComponent
               :title="project.title"
@@ -33,11 +33,26 @@
         <Pagination/>
       </template>
     </Carousel>
+
+    <div v-else class="md:flex md:flex-row md:mx-3 md:flex-wrap md:justify-evenly">
+        <CardComponent
+            :title="project.title"
+            :description="project.description"
+            :skills="project.skills"
+            :date="project.date"
+            :organisation="project.organisation"
+            :link="project.link"
+            :text_link="project.text_link"
+
+            class="mx-auto md:mx-1"
+            v-for="project in projects_texts.projects.slice(0,6)" :key="project.title"
+        />
+    </div>
+
     <div class="text-center my-8">
       <router-link to="/realisations" class="mx-auto bg-red text-white font-extrabold p-2 rounded-sm">
         Découvrir + de projets
       </router-link>
-
     </div>
   </div>
 
@@ -71,9 +86,9 @@
 
   <div class="mb-4" id="experiences">
     <h2 class="h2-red">Expériences</h2>
-    <Carousel :items-to-show="1" :wrap-around="true" :transition="500">
+    <Carousel :items-to-show="1" :wrap-around="true" :transition="500" v-if="isMobile">
 
-      <Slide v-for="experience in experiences_texts.experiences" :key="experience">
+      <Slide v-for="experience in experiences_texts.experiences" :key="experience.title" >
         <div class="carousel__item">
           <CardComponent
               :title="experience.title"
@@ -89,12 +104,28 @@
         </div>
       </Slide>
 
-
       <template #addons>
         <Navigation/>
         <Pagination/>
       </template>
     </Carousel>
+
+
+   <div v-else class="md:flex md:flex-row md:mx-3 md:flex-wrap md:justify-evenly">
+     <CardComponent
+         :title="experience.title"
+         :description="experience.description"
+         :skills="experience.skills"
+         :date="experience.date"
+         :organisation="experience.organisation"
+         :link="experience.link"
+         :text_link="experience.text_link"
+
+         class="mx-auto md:mx-1"
+         v-for="experience in experiences_texts.experiences" :key="experience.title"
+     />
+    </div>
+
     <div class="text-center my-8">
       <a href="/public/doc/CV_thea_fort.pdf" target="_blank" class="mx-auto bg-red text-white font-extrabold p-2 rounded-sm">
         Consulter mon CV complet
@@ -159,10 +190,27 @@ import {tab_skills} from "@/content/skills.js"
 
 import 'vue3-carousel/carousel.css'
 import {Carousel, Slide, Pagination, Navigation} from 'vue3-carousel'
-import TrainingComponent from "@/components/TrainingComponent.vue";
-// import {Accordion, AccordionContent, AccordionItem, AccordionTrigger} from "@/components/ui/accordion/index.js";
 
 import {Accordion, AccordionContent, AccordionItem, AccordionTrigger,} from '@/components/ui/accordion'
-import {CalendarDays, GraduationCap, Link, MapPin, Code} from "lucide-vue-next";
+import {CalendarDays, GraduationCap, Link, MapPin} from "lucide-vue-next";
+
+import { ref, onMounted, onUnmounted } from 'vue'
+
+const isMobile = ref(true)
+const checkScreen = () => {
+  isMobile.value = window.innerWidth < 768
+}
+
+onMounted(() => {
+  checkScreen()
+  window.addEventListener('resize', checkScreen)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', checkScreen)
+})
+
+
+
 </script>
 

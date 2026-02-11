@@ -24,8 +24,8 @@
     </button>
   </div>
 
-  <div>
-    <div v-for="project in filteredProjects" :key="project">
+  <div class="md:flex md:flex-row md:mx-3 md:flex-wrap md:justify-evenly">
+<!--    <div v-for="project in filteredProjects" :key="project.title" >-->
       <CardComponent
           :url_img="project.url_img"
           :alt_img="project.alt_img"
@@ -37,9 +37,10 @@
           :link="project.link"
           :text_link="project.text_link"
 
-          class="mx-auto"
+          class="mx-auto md:mx-1"
+          v-for="project in filteredProjects" :key="project.title"
       />
-    </div>
+<!--    </div>-->
   </div>
 
 </template>

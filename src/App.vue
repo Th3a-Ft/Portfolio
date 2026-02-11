@@ -2,7 +2,7 @@
   <header class="flex flex-row justify-between items-center pb-8 px-8">
     <div>
       <router-link to="/">
-      <img src="/public/img/logo_tf.png" alt="logo Théa Fort" class="max-w-16">
+        <img src="/public/img/logo_tf.png" alt="logo Théa Fort" class="max-w-16">
       </router-link>
     </div>
 
@@ -35,16 +35,20 @@
 
     <!-- Menu desktop-->
     <div class="hidden md:flex">
-      <nav>
-        <router-link to="/">
+      <nav class="md:flex md:flex-row md:items-center md:text-xl md:text-red">
+        <router-link to="/" class="mx-3">
           <House/>
         </router-link>
-        <router-link to="/realisations">Réalisations</router-link>
-        <router-link to="/experiences">Expériences</router-link>
-        <router-link to="/competences">Compétences</router-link>
-        <router-link to="/contact">Contact</router-link>
-        <router-link to="/cv">CV</router-link>
+        <router-link to="/realisations" class="mx-3">Réalisations</router-link>
+        <a href="/#experiences" class="mx-3">Expériences</a>
+        <a href="/#competences" class="mx-3">Compétences</a>
+        <router-link to="/a-propos-de-moi" class="mx-3">A propos de moi</router-link>
+        <router-link to="/contact" class="mx-3">Contact</router-link>
+        <a href="/public/doc/CV_thea_fort.pdf" target="_blank" class="mx-3">
+          Mon CV
+        </a>
       </nav>
+
     </div>
   </header>
 
@@ -57,17 +61,17 @@
         <img src="/public/img/logo_tf.png" alt="logo Théa Fort" class="max-w-16">
       </router-link>
       <div>
-        <div class="flex flex-col text-right text-red text-xs">
+        <div class="flex flex-col text-right text-red text-xs md:text-sm">
           <router-link to="/realisations">Réalisations</router-link>
           <a target="_blank" href="/public/doc/CV_thea_fort.pdf">Mon CV complet</a>
-          <router-link to="/contact">Contact</router-link>
+          <router-link to="/contact">Contacts</router-link>
         </div>
         <div class="flex justify-end mt-4">
           <a target="_blank" href="https://www.linkedin.com/in/thea-fort">
-            <Linkedin color="#800101" size=16 />
+            <Linkedin color="#800101" size="16"/>
           </a>
           <a target="_blank" href="https://github.com/Th3a-Ft">
-            <Github color="#800101" size=16 />
+            <Github color="#800101" size="16"/>
           </a>
         </div>
       </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="border border-red mb-8 w-3/4 p-2">
+  <div class="border border-red mb-8 w-3/4 md:w-1/4 p-2">
     <img :src="url_img" :alt="alt_img">
     <h3 class="text-red">{{ title }}</h3>
     <p>{{ description }}</p>

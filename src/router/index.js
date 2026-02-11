@@ -13,7 +13,7 @@ const router = createRouter({
             name: 'home',
             component: HomeView,
             meta: {
-                title: 'Portfolio de Théa Fort !',
+                title: 'Portfolio de Théa Fort',
                 description: 'Projets, expériences, compétences toutes les infos sur mon parcours !'
             }
         },
