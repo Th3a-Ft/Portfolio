@@ -83,5 +83,4 @@
 <script setup>
 import BannerComponent from "@/components/BannerComponent.vue";
 import {BookOpenText, Volleyball, MapPlus, CalendarDays, Link, Handshake} from "lucide-vue-next";
-import CardComponent from "@/components/CardComponent.vue";
 </script>

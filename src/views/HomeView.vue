@@ -2,10 +2,7 @@
   <BannerComponent
       title="Hello World!"
       description="Bienvenu sur mon site portfolio ! Vous trouverez les projets auxquels j’ai participé, ceux que j’ai réalisés mais aussi des infos sur mon parcours. Belle découverte !"
-      :links="[
-        {'url':'/#experiences','text':'Expériences'},
-        {'url':'/a-propos-de-moi','text':'A propos de moi'},
-      ]"
+
   />
   <div>
     <h2 class="h2-red">Réalisations</h2>
@@ -56,7 +53,7 @@
     </div>
   </div>
 
-  <div class="bg-red pb-8" id="competences">
+  <div class="bg-red pb-8" id="skills">
     <h2 class="h2-white">Hard Skills</h2>
 
     <div class="flex flex-row flex-wrap justify-evenly">

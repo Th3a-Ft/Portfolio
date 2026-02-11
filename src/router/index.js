@@ -43,12 +43,22 @@ const router = createRouter({
         },
 
     ],
+    scrollBehavior(to, from, savedPosition) {
+        if (savedPosition) {
+            return savedPosition
+        }
+        if (to.hash) {
+            return {
+                el: to.hash,
+            }
+        }
+        return { top: 0 }
+    }
 
 });
 
-// Loads the title and description of each page before changing the route
 router.beforeEach((to) => {
-        const {title, description} = to.meta;
+        const {title} = to.meta;
         const defaultTitle = 'Théa Fort Portfolio';
         document.title = title || defaultTitle
     }

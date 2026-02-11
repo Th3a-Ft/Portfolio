@@ -40,8 +40,8 @@
           <House/>
         </router-link>
         <router-link to="/realisations" class="mx-3">Réalisations</router-link>
-        <router-link to="/#experiences" class="mx-3">Expériences</router-link>
-        <router-link to="/#competences" class="mx-3">Compétences</router-link>
+        <router-link :to="{ path: '/', hash: '#experiences' }" class="mx-3">Expériences</router-link>
+        <router-link :to="{ path: '/', hash: '#skills' }" class="mx-3">Compétences</router-link>
         <router-link to="/a-propos-de-moi" class="mx-3">A propos de moi</router-link>
         <router-link to="/contact" class="mx-3">Contact</router-link>
         <a href="/public/doc/CV_thea_fort.pdf" target="_blank" class="mx-3">
