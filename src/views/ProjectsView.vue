@@ -1,7 +1,7 @@
 <template>
   <BannerComponent
       title="Mes projets"
-      description="Découvrez l'ensemble de mes projets ! Vous trouverez des projets réalisés en cours de formation ou en entreprise et certains personnels perso. Développement, graphisme, communication : mes projets sont à l'image de mon parcours"
+      description="Découvrez une partie de mes projets ! Vous trouverez des projets réalisés au cours de différentes missions, les projets de développement ont été réalisés en cours de formation."
 
   />
 

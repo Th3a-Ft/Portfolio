@@ -2,6 +2,22 @@ export const tab_skills =
     {
         hard_skills: [
             {
+                skill_name: "Graphisme",
+                skill_subtitle: "Inkscape, Suite Adobe, Canva"
+            },
+            {
+                skill_name: "Réseaux sociaux",
+                skill_subtitle: "Facebook, Instagram, Linkedin"
+            },
+            {
+                skill_name: "Montage vidéo",
+                skill_subtitle: "Capcut, Canva"
+            },
+            {
+                skill_name: "Newsletter",
+                skill_subtitle: "Brevo, Mailchimp"
+            },
+            {
                 skill_name: "Langages",
                 skill_subtitle: "Java, PHP, Javascript",
             },
@@ -25,14 +41,7 @@ export const tab_skills =
                 skill_name: "Outil no-code",
                 skill_subtitle: "Wordpress"
             },
-            {
-                skill_name: "Graphisme",
-                skill_subtitle: "Inkscape, Suite Adobe, Canva"
-            },
-            {
-                skill_name: "Newsletter",
-                skill_subtitle: "Brevo, Mailchimp"
-            },
+
           ],
         soft_skills:["Curiosité", "Adaptabilité","Autonomie", "Polyvalence","Esprit d'équipe"]
     }

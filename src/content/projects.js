@@ -56,6 +56,7 @@ export const projects_texts = {
 
         },
         {
+            url_img:"img/img_projects/pvv_rs.png",
             title: "Animation des réseaux sociaux",
             description: "Création et publication de contenus adaptés aux réseaux sociaux, réponses aux demandes des utilisateurs, gestion en lien avec les bénévoles du club",
             skills: ['Instagram','Facebook','LinkedIn'],
@@ -98,6 +99,7 @@ export const projects_texts = {
 
         },
         {
+            url_img:"img/img_projects/pve_rs.png",
             title: "Couverture média de compétitions européennes",
             description: "Communication sur les réseaux sociaux pendant la compétition, rédaction d'articles récap des matchs / journées",
             skills: ['Canva','Facebook','Instagram','Threads','TikTok'],
@@ -117,11 +119,14 @@ export const projects_texts = {
             category:"others"
         },
         {
+            url_img: "img/img_projects/pvv_presse.png",
             title: "Communication presse",
             description: "Echanges avec les médias avant les matchs et événements.",
             skills: ['Communiqué de presse', 'Dossier de presse'],
             date: "Sept 2023 - sept 2025",
             organisation:"Pays Voironnais Volley",
+            link:"https://drive.google.com/file/d/1qldNo2taSGX2DKxZ2PKiBMHrf2By_5zr/view?usp=drive_link",
+            text_link: "Consulter un dossier de presse",
             category:"comm"
         },
         {

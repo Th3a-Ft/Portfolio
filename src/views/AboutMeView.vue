@@ -1,8 +1,7 @@
 <template>
   <BannerComponent
       title="Qui je suis..."
-      description="Développeuse web en reconversion après 3 ans dans la communication, je combine créativité, gestion de projet et compétences techniques.
-      Mon objectif : concevoir des solutions web polyvalentes et innovantes, alliant technicité et sens de l’utilisateur. "/>
+      description="Un peu touche-à-tout, aussi bien dans ma vie pro que perso, j'aime découvrir de nouvelles choses et me dépasser ! "/>
 
   <h2 class="h2-red">Mes centres d'intérêt</h2>
   <div class="md:flex md:flex-row md-flex-wrap">
@@ -23,6 +22,7 @@
       </div>
       <p>Il m'arrive régulièrement de me perdre dans un livre ou dans les rayons d'une librairie.</p>
       <p>J'ai une préférence pour les polars, policiers et thrillers mais j'aime aussi les fantastiques.</p>
+      <p>Mon livre préféré est "la voleuse de livres" de Markus Zusak que je vous conseille vivement !</p>
     </div>
 
     <div class="border-solid border-red border-1 rounded-sm m-3 p-4 md:w-1/3">
@@ -31,8 +31,7 @@
         <p class="font-bold text-lg">Les voyages</p>
       </div>
       <p>J'ai la chance d'avoir pu voyager dans plusieurs pays d'Europe (Allemagne, Irlande, Pays de Galles, Portugal)
-        mais aussi La Réunion.</p>
-      <p>J'ai une préférence pour les polars, policiers et thrillers mais j'aime aussi les fantastiques.</p>
+        mais aussi à La Réunion et en France métropolitaine bien entendu !</p>
     </div>
   </div>
 
