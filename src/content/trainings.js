@@ -9,7 +9,7 @@ export const trainings_texts = {
             title: "Concepteur Développeur d'Applications",
             school: "Campus Numérique in the Alps",
             location: "Grenoble (38)",
-            date: "Depuis mars 2025",
+            date: "mars 2025 - décembre 2025",
             descriptions: ['Maitriser des langages de programmation', 'Concevoir et gérer des bases de données', 'Appliquer les bonnes pratiques de développement', 'Traduire techniquement un cahiers des charges'],
             link:"https://le-campus-numerique.fr/formations-developpeur2/",
         },
